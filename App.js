@@ -1,12 +1,15 @@
-let tags = document.getElementById("container")
-let hack = document.getElementById("hack")
-hack.addEventListener("click",()=>{
-    alert("hello")
-})
-let newH = document.getElementById("add")
-newH.style.backgroundColor = "blue"
-newH.innerHTML = "new one"
-tags.append(newH)
+import React from "react"
+import ReactDOM from "react-dom/client"
+
+const heading1 = React.createElement("h1",{},"hello")
+
+const heading2 = React.createElement("h2",{},"heading2")
+
+const container = React.createElement("div",{},[heading1,heading2])
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+
+root.render(container)
 
 
 
