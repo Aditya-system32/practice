@@ -57,3 +57,14 @@ body{
     flex-wrap: wrap;
 
 }
+
+.cuisine-container{
+     display: flex; 
+    flex-wrap: wrap;  
+    margin-bottom: 10px; 
+}
+
+.cuisine-container > h3{
+    font-size: 0.9em;
+    margin: 0 4px; 
+}
